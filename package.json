@@ -2,7 +2,7 @@
 	"name": "ETHER Bot",
 	"version": "1.0.0",
 	"description": "A useful bot for ETHER members",
-	"main": "bot.js",
+	"main": "index.js",
 	"author": "Cirina",
 	"dependencies": {
 		"discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
