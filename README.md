@@ -18,7 +18,7 @@ To test it, write
 ```
 node bot.js
 ```
-Go to your Discord server, and send "ping". The bot will answer "Pong !".
+Go to your Discord server, and send "!compo". The bot will answer
 
 ## Authors
 * **Cirina Sagahl** - *Initial work*
