@@ -67,6 +67,7 @@ client.on('message', msg =>
 	const args = msg.content.slice('!'.length).split(' ');
 	const command = args.shift().toLowerCase();
 
+	 /* 
 	 if (command === 'tocard') {
 		if (!args.length) {
 			return msg.channel.send(`You didn't provide any arguments, ${msg.author}!`);
@@ -76,6 +77,7 @@ client.on('message', msg =>
 	
 		msg.channel.send(`${taggedUser} est vraiment un gros tocardo-avocado !`);
 	}
+	*/
 	
 	console.warn("Bot said: "+ response);
 });
