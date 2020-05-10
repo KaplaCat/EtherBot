@@ -2,41 +2,49 @@
 	"tank1":
 	{
 		"name":"Snow",
-		"role":"WAR"
+		"role":"WAR",
+		"roleStatus": "MT"
 	},
 	"tank2":
 	{
 		"name":"Mister",
-		"role":"GUN"
+		"role":"GUN",
+		"roleStatus": "OT"
 	},
 	"heal1":
 	{
 		"name":"Mythya",
-		"role":"SCH"
+		"role":"SCH",
+		"roleStatus": "H1"
 	},
 	"heal2":
 	{
 		"name":"Ao",
-		"role":"WHM"
+		"role":"WHM",
+		"roleStatus": "H2"
 	},
 	"dps1":
 	{
 		"name":"Yum'e",
-		"role":"BLM"
+		"role":"BLM",
+		"roleStatus": "M1"
 	},
 	"dps2":
 	{
 		"name":"Lovaris",
-		"role":"SAM"
+		"role":"SAM",
+		"roleStatus": "M2"
 	},
 	"dps3":
 	{
 		"name":"Elemen",
-		"role":"DRG"
+		"role":"DRG",
+		"roleStatus": "R1"
 	},
 	"dps4":
 	{
 		"name":"Random",
-		"role":"???"
+		"role":"???",
+		"roleStatus": "R2"
 	}
 }
