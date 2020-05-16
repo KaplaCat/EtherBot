@@ -1,0 +1,27 @@
+{
+  "tanks": {
+    "paladin":"PLD",
+    "warrior":"WAR",
+    "gunbreaker":"GNB",
+    "dark knight":"DRK"
+  },
+
+  "dps": {
+    "monk":"MNK",
+    "dragoon":"DRG",
+    "bard":"BRD",
+    "black mage":"BLM",
+    "summoner":"SMN",
+    "samurai":"SAM",
+    "red mage":"RDM",
+    "ninja":"NIN",
+    "machinist":"MCH",
+    "dancer":"DNC"
+  },
+
+  "heals": {
+    "white mage":"WHM",
+    "scholar":"SCH",
+    "astrologian":"AST",
+  }
+}

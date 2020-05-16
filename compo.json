@@ -1,6 +1,6 @@
 {
   "tank1": {
-    "name": "Yum'e",
+    "name": "Cirina",
     "role": "WAR",
     "roleStatus": "MT"
   },
@@ -20,7 +20,7 @@
     "roleStatus": "H2"
   },
   "dps1": {
-    "name": "Yum'e",
+    "name": "Yume",
     "role": "BLM",
     "roleStatus": "M1"
   },
@@ -30,12 +30,12 @@
     "roleStatus": "M2"
   },
   "dps3": {
-    "name": "Elemen",
+    "name": "Yume",
     "role": "DRG",
     "roleStatus": "R1"
   },
   "dps4": {
-    "name": "Random",
+    "name": "Elemen",
     "role": "???",
     "roleStatus": "R2"
   }

@@ -52,22 +52,33 @@ function changeRole(content)
 
 function changeName(args) {
 	if (args.length == 2) {
-		var tankJob = args[0].toUpperCase();
+		var playerRole = args[0].toUpperCase();
 		var name = args[1];
-		var nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
+		var playerNameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
 
 		//A remplacer par un switch pour chaque post possible (8)
-		if (tankJob === 'MT' || tankJob === 'OT') {
-			if(tankJob === 'MT') {
-				compo.tank1.name = nameCapitalized;
+		for(var index in compo) {
+			if (compo[index]["roleStatus"] == playerRole) {
+				compo[index]["name"] = playerNameCapitalized;
 				fs.writeFileSync('./compo.json', JSON.stringify(compo, null, 2));
-				return nameCapitalized
-			} else if (tankJob === 'OT') {
-				compo.tank2.name = nameCapitalized;
+				return `Add name for role: ${compo[index]["roleStatus"]}`
 			}
-		}
+		}	
 	}
 }
+
+
+		// if (tankJob === 'MT' || tankJob === 'OT') {
+		// 	if(tankJob === 'MT') {
+		// 		compo.tank1.name = nameCapitalized;
+		// 		fs.writeFileSync('./compo.json', JSON.stringify(compo, null, 2));
+		// 		return nameCapitalized
+		// 	} else if (tankJob === 'OT') {
+		// 		compo.tank2.name = nameCapitalized;
+		// 	}
+		// }
+// 	}
+// }
 
 
 client.on('message', msg => 
@@ -90,7 +101,7 @@ client.on('message', msg =>
 			return msg.channel.send(`You didn't provide any arguments, ${msg.author}!`);
 		} else {
 			var response = changeName(args);	
-			msg.channel.send(`Name: ${response}`);
+			msg.channel.send(response);
 			msg.channel.send(getCompo());
 			// return msg.channel.send('2 arguments ou job invalide');
 		}
