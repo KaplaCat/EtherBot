@@ -61,6 +61,23 @@ client.on('message', msg =>
 	{
 		changeRole(msg.content);	
 	}
+
+	if (!msg.content.startsWith('!') || msg.author.bot) return;
+
+	const args = msg.content.slice('!'.length).split(' ');
+	const command = args.shift().toLowerCase();
+
+	 /* 
+	 if (command === 'tocard') {
+		if (!args.length) {
+			return msg.channel.send(`You didn't provide any arguments, ${msg.author}!`);
+		}
+
+		const taggedUser = msg.mentions.users.first();
+	
+		msg.channel.send(`${taggedUser} est vraiment un gros tocardo-avocado !`);
+	}
+	*/
 	
 	console.warn("Bot said: "+ response);
 });
